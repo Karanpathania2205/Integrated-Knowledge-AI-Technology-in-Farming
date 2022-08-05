@@ -2,14 +2,14 @@ import { Navbar, Container, Nav, NavDropdown, NavItem, MenuItem } from 'react-bo
 function Navtop() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar fixed="top" bg="dark " variant="dark">
         <Container>
-          <Navbar.Brand href="#home">IKAT</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About Us</Nav.Link>
-            <Nav.Link href="#pricing">Disease Detection</Nav.Link>
-            <Nav.Link href="#pricing">Crop Prediction</Nav.Link>
+          <Navbar.Brand href="/">IKAT</Navbar.Brand>
+          <Nav className="me-auto fw-bold">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/disease-detection">Disease Detection</Nav.Link>
+            <Nav.Link href="/crop-prediction">Crop Prediction</Nav.Link>
+            <Nav.Link href="/aboutus">About Us</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
